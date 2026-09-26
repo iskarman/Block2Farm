@@ -17,7 +17,7 @@ The sample Panchayat names, coordinates, terrain, land cover, and crop stages ar
 - Node.js 20 or later with npm
 - PostgreSQL with the PostGIS extension installed and enabled
 
-No AWS account, Docker, or IMD API key is needed. The database runs locally on your computer.
+currently The database runs locally on your computer.
 
 ## 1. Set up PostgreSQL
 
@@ -85,7 +85,7 @@ Open the local URL Vite prints (usually http://localhost:5173). Stop either serv
 ## Project layout
 
 ```text
-/backend
+
   app/main.py                         FastAPI routes and database startup
   app/models.py                       SQLAlchemy tables and PostGIS geometry
   app/seed.py                         Synthetic sample Panchayat locations
