@@ -1,4 +1,4 @@
-# Fieldcast — Panchayat Weather Downscaling
+# Block2Farm — Panchayat Weather Downscaling
 
 A local Smart India Hackathon prototype using **Python/FastAPI**, **React/Leaflet**, and **PostgreSQL/PostGIS**. It uses a bundled, dated snapshot of a published India Meteorological Department (IMD) block forecast.
 
@@ -35,7 +35,7 @@ Keep the password local. The application creates its tables when it starts.
 ## 2. Start the FastAPI backend (PowerShell)
 
 ```powershell
-cd C:\Users\skarm\Desktop\sih\backend
+cd backend
 py -3.12 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
@@ -63,7 +63,7 @@ The first run seeds the sample locations and loads forecasts from the bundled JS
 Open another PowerShell window:
 
 ```powershell
-cd C:\Users\skarm\Desktop\sih\frontend
+cd frontend
 npm install
 npm run dev
 ```
