@@ -4,7 +4,7 @@ A local Smart India Hackathon prototype using **Python/FastAPI**, **React/Leafle
 
 ## Data and limitations
 
-For initial prototype The bundled forecast is for **Sujanpur, Pathankot, Punjab**, published **26 September 2026**, and covers 26–30 September 2026. The app stores this snapshot in PostgreSQL and applies a transparent example downscaling adjustment for its sample locations. Reloading the snapshot reuses the same local file; it does not update weather data.
+For initial prototype The bundled forecast is for **Sujanpur, Pathankot, Punjab**, published **26 September 2026**, and covers 26–30 September 2026. The app stores this snapshot in PostgreSQL and applies a transparent example downscaling adjustment for its sample locations. Reloading the snapshot reuses the same local file; currently it does not update weather data in our prototype but in our full version it will.
 
 
 Source: [IMD Chandigarh block forecast PDF](https://mausam.imd.gov.in/chandigarh/mcdata/block_pun.pdf). See `app/data/imd_sujanpur_forecast.json` for the included values and source metadata.
@@ -85,7 +85,7 @@ Open the local URL Vite prints (usually http://localhost:5173). Stop either serv
 ## Project layout
 
 ```text
-
+/backend
   app/main.py                         FastAPI routes and database startup
   app/models.py                       SQLAlchemy tables and PostGIS geometry
   app/seed.py                         Synthetic sample Panchayat locations
